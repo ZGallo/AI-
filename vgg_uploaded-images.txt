@@ -1,0 +1,72 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:              Black_bear_01.jpg  label:                 black bear
+ 2 key:                     Dog_01.jpg  label:                        dog
+ 3 key:                     Dog_02.jpg  label:                        dog
+ 4 key:                 Blender_01.jpg  label:                    blender
+
+     MATCH:
+
+             Black_bear_01.jpg: 
+Real:                 black bear   Classifier: American black bear, black bear, Ursus americanus, Euarctos americanus
+
+ NOT A MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:              Yorkshire terrier
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:              Yorkshire terrier
+
+                Blender_01.jpg: 
+Real:                    blender   Classifier:         vacuum, vacuum cleaner
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+     MATCH:
+
+             Black_bear_01.jpg: 
+Real:                 black bear   Classifier: American black bear, black bear, Ursus americanus, Euarctos americanus  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:              Yorkshire terrier  
+PetLabelDog: 1  ClassLabelDog: 0
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:              Yorkshire terrier  
+PetLabelDog: 1  ClassLabelDog: 0
+
+                Blender_01.jpg: 
+Real:                    blender   Classifier:         vacuum, vacuum cleaner  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  0  N NotDog Images:  4 
+Pct Corr dog:   0.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog:   0.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+The model being used is: VGG
+ 
+The number of images are:   4
+    The number of dog images are:   2
+    The number of Not-a dog images are:   2
+ 
+*** % Correct Dogs ***    pct_correct_dogs:     0%
+*** % Correct "Not-a" Dog ***    pct_correct_notdogs:   100%
+*** % Correct Breed ***    pct_correct_breed:     0%
+
+INCORRECT Dog Breed Assignment:
+
+** Total Elapsed Runtime: 0:0:3
