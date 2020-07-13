@@ -324,10 +324,10 @@ The model being used is: RESNET
     The number of Not-a dog images are:  10
 
 *** Percentages ***
-% Correct Dogs: pct_correct_dogs:   100%
-% Correct "Not-a" Dog:pct_correct_notdogs:    90%
-% Correct Breed: pct_correct_breed:    90%
-% of correctly matched images:pct_matched_images:    82%
+% Correct Dogs: pct_correct_dogs: 100.0%
+% Correct "Not-a" Dog:pct_correct_notdogs:  90.0%
+% Correct Breed: pct_correct_breed:  90.0%
+% of correctly matched images:pct_matched_images:  82.5%
 
 INCORRECT Dog Breed Assignment:
 Real:             great pyrenees   Classifier:                         kuvasz

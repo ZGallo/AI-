@@ -78,13 +78,13 @@ def print_results(results_dic, results_stats_dic, model,
     print('\n*** Percentages ***')
     for pct, value in results_stats_dic.items():
         if pct == 'pct_correct_dogs':
-            print('% Correct Dogs: {:>4}: {:>5.0f}%'.format(pct,value))
+            print('% Correct Dogs: {:>4}: {:>5.1f}%'.format(pct,value))
         if pct == 'pct_correct_breed':
-            print('% Correct Breed: {:>4}: {:>5.0f}%'.format(pct,value))
+            print('% Correct Breed: {:>4}: {:>5.1f}%'.format(pct,value))
         if pct == 'pct_correct_notdogs':
-            print('% Correct "Not-a" Dog:{:}: {:>5.0f}%'.format(pct,value))
+            print('% Correct "Not-a" Dog:{:}: {:>5.1f}%'.format(pct,value))
         if pct == 'pct_matched_images':
-            print('% of correctly matched images:{:}: {:>5.0f}%'.format(pct,value))
+            print('% of correctly matched images:{:}: {:>5.1f}%'.format(pct,value))
         
      # IF print_incorrect_breed == True AND there were dogs whose breeds 
     # were incorrectly classified - print out these cases                    
