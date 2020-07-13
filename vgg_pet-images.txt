@@ -1,6 +1,6 @@
 Command Line Arguments:
      dir = pet_images/ 
-    arch = alexnet 
+    arch = vgg 
  dogfile = dognames.txt
 
 Pet Image Label Dictionary has 40 key-value pairs.
@@ -30,6 +30,12 @@ Real:                  dalmatian   Classifier: dalmatian, coach dog, carriage do
            Dalmatian_04037.jpg: 
 Real:                  dalmatian   Classifier: dalmatian, coach dog, carriage dog
 
+      Boston_terrier_02285.jpg: 
+Real:             boston terrier   Classifier:    boston bull, boston terrier
+
+    Golden_retriever_05257.jpg: 
+Real:           golden retriever   Classifier:               golden retriever
+
       Boston_terrier_02259.jpg: 
 Real:             boston terrier   Classifier:    boston bull, boston terrier
 
@@ -37,10 +43,13 @@ Real:             boston terrier   Classifier:    boston bull, boston terrier
 Real:                     poodle   Classifier:        standard poodle, poodle
 
                     cat_02.jpg: 
-Real:                        cat   Classifier:                 tiger cat, cat
+Real:                        cat   Classifier:          tabby, tabby cat, cat
 
              Basenji_00974.jpg: 
 Real:                    basenji   Classifier:                        basenji
+
+              Beagle_01141.jpg: 
+Real:                     beagle   Classifier:                         beagle
 
           Great_dane_05320.jpg: 
 Real:                 great dane   Classifier:                     great dane
@@ -93,11 +102,17 @@ Real:                    basenji   Classifier:                        basenji
       Cocker_spaniel_03750.jpg: 
 Real:             cocker spaniel   Classifier: cocker spaniel, english cocker spaniel, cocker
 
+                  gecko_02.jpg: 
+Real:                      gecko   Classifier:            banded gecko, gecko
+
                  skunk_029.jpg: 
 Real:                      skunk   Classifier:     skunk, polecat, wood pussy
 
               Collie_03797.jpg: 
 Real:                     collie   Classifier:                         collie
+
+    Golden_retriever_05182.jpg: 
+Real:           golden retriever   Classifier:               golden retriever
 
            fox_squirrel_01.jpg: 
 Real:               fox squirrel   Classifier: fox squirrel, eastern fox squirrel, sciurus niger
@@ -113,34 +128,19 @@ Real:               basset hound   Classifier:           basset, basset hound
        great_horned_owl_02.jpg: 
 Real:           great horned owl   Classifier: ruffed grouse, partridge, bonasa umbellus
 
-      Boston_terrier_02285.jpg: 
-Real:             boston terrier   Classifier:                        basenji
-
-    Golden_retriever_05257.jpg: 
-Real:           golden retriever   Classifier:           afghan hound, afghan
-
                   gecko_80.jpg: 
-Real:                      gecko   Classifier:           tree frog, tree-frog
-
-              Beagle_01141.jpg: 
-Real:                     beagle   Classifier:               english foxhound
+Real:                      gecko   Classifier: tailed frog, bell toad, ribbed toad, tailed toad, ascaphus trui
 
       Great_pyrenees_05367.jpg: 
 Real:             great pyrenees   Classifier:                         kuvasz
 
                     cat_01.jpg: 
-Real:                        cat   Classifier: african hunting dog, hyena dog, cape hunting dog, lycaon pictus
-
-                  gecko_02.jpg: 
-Real:                      gecko   Classifier:               alligator lizard
+Real:                        cat   Classifier:                           lynx
 
               Beagle_01170.jpg: 
 Real:                     beagle   Classifier:  walker hound, walker foxhound
 
-    Golden_retriever_05182.jpg: 
-Real:           golden retriever   Classifier:                tibetan mastiff
-
-# Total Images 40 # Matches: 30 # NOT Matches: 10
+# Total Images 40 # Matches: 35 # NOT Matches: 5
 
      MATCH:
 
@@ -160,6 +160,14 @@ PetLabelDog: 1  ClassLabelDog: 1
 Real:                  dalmatian   Classifier: dalmatian, coach dog, carriage dog  
 PetLabelDog: 1  ClassLabelDog: 1
 
+      Boston_terrier_02285.jpg: 
+Real:             boston terrier   Classifier:    boston bull, boston terrier  
+PetLabelDog: 1  ClassLabelDog: 1
+
+    Golden_retriever_05257.jpg: 
+Real:           golden retriever   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
       Boston_terrier_02259.jpg: 
 Real:             boston terrier   Classifier:    boston bull, boston terrier  
 PetLabelDog: 1  ClassLabelDog: 1
@@ -169,11 +177,15 @@ Real:                     poodle   Classifier:        standard poodle, poodle
 PetLabelDog: 1  ClassLabelDog: 1
 
                     cat_02.jpg: 
-Real:                        cat   Classifier:                 tiger cat, cat  
+Real:                        cat   Classifier:          tabby, tabby cat, cat  
 PetLabelDog: 0  ClassLabelDog: 0
 
              Basenji_00974.jpg: 
 Real:                    basenji   Classifier:                        basenji  
+PetLabelDog: 1  ClassLabelDog: 1
+
+              Beagle_01141.jpg: 
+Real:                     beagle   Classifier:                         beagle  
 PetLabelDog: 1  ClassLabelDog: 1
 
           Great_dane_05320.jpg: 
@@ -244,12 +256,20 @@ PetLabelDog: 1  ClassLabelDog: 1
 Real:             cocker spaniel   Classifier: cocker spaniel, english cocker spaniel, cocker  
 PetLabelDog: 1  ClassLabelDog: 1
 
+                  gecko_02.jpg: 
+Real:                      gecko   Classifier:            banded gecko, gecko  
+PetLabelDog: 0  ClassLabelDog: 0
+
                  skunk_029.jpg: 
 Real:                      skunk   Classifier:     skunk, polecat, wood pussy  
 PetLabelDog: 0  ClassLabelDog: 0
 
               Collie_03797.jpg: 
 Real:                     collie   Classifier:                         collie  
+PetLabelDog: 1  ClassLabelDog: 1
+
+    Golden_retriever_05182.jpg: 
+Real:           golden retriever   Classifier:               golden retriever  
 PetLabelDog: 1  ClassLabelDog: 1
 
            fox_squirrel_01.jpg: 
@@ -270,53 +290,33 @@ PetLabelDog: 1  ClassLabelDog: 1
 Real:           great horned owl   Classifier: ruffed grouse, partridge, bonasa umbellus  
 PetLabelDog: 0  ClassLabelDog: 0
 
-      Boston_terrier_02285.jpg: 
-Real:             boston terrier   Classifier:                        basenji  
-PetLabelDog: 1  ClassLabelDog: 1
-
-    Golden_retriever_05257.jpg: 
-Real:           golden retriever   Classifier:           afghan hound, afghan  
-PetLabelDog: 1  ClassLabelDog: 1
-
                   gecko_80.jpg: 
-Real:                      gecko   Classifier:           tree frog, tree-frog  
+Real:                      gecko   Classifier: tailed frog, bell toad, ribbed toad, tailed toad, ascaphus trui  
 PetLabelDog: 0  ClassLabelDog: 0
-
-              Beagle_01141.jpg: 
-Real:                     beagle   Classifier:               english foxhound  
-PetLabelDog: 1  ClassLabelDog: 1
 
       Great_pyrenees_05367.jpg: 
 Real:             great pyrenees   Classifier:                         kuvasz  
 PetLabelDog: 1  ClassLabelDog: 1
 
                     cat_01.jpg: 
-Real:                        cat   Classifier: african hunting dog, hyena dog, cape hunting dog, lycaon pictus  
-PetLabelDog: 0  ClassLabelDog: 0
-
-                  gecko_02.jpg: 
-Real:                      gecko   Classifier:               alligator lizard  
+Real:                        cat   Classifier:                           lynx  
 PetLabelDog: 0  ClassLabelDog: 0
 
               Beagle_01170.jpg: 
 Real:                     beagle   Classifier:  walker hound, walker foxhound  
 PetLabelDog: 1  ClassLabelDog: 1
 
-    Golden_retriever_05182.jpg: 
-Real:           golden retriever   Classifier:                tibetan mastiff  
-PetLabelDog: 1  ClassLabelDog: 1
-
-# Total Images 40 # Matches: 30 # NOT Matches: 10
+# Total Images 40 # Matches: 35 # NOT Matches: 5
 
  ** Statistics from calculates_results_stats() function:
 N Images: 40  N Dog Images:  0  N NotDog Images: 40 
-Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  80.0
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  93.3
 
  ** Check Statistics - calculated from this function as a check:
 N Images: 40  N Dog Images: 30  N NotDog Images: 10 
-Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  80.0
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  93.3
 
-The model being used is: ALEXNET
+The model being used is: VGG
 
 
     The number of images are:  40
@@ -326,15 +326,11 @@ The model being used is: ALEXNET
 *** Percentages ***
 % Correct Dogs: pct_correct_dogs:   100%
 % Correct "Not-a" Dog:pct_correct_notdogs:   100%
-% Correct Breed: pct_correct_breed:    80%
-% of correctly matched images:pct_matched_images:    75%
+% Correct Breed: pct_correct_breed:    93%
+% of correctly matched images:pct_matched_images:    88%
 
 INCORRECT Dog Breed Assignment:
-Real:             boston terrier   Classifier:                        basenji
-Real:           golden retriever   Classifier:           afghan hound, afghan
-Real:                     beagle   Classifier:               english foxhound
 Real:             great pyrenees   Classifier:                         kuvasz
 Real:                     beagle   Classifier:  walker hound, walker foxhound
-Real:           golden retriever   Classifier:                tibetan mastiff
 
-** Total Elapsed Runtime: 0:0:3
+** Total Elapsed Runtime: 0:0:32
