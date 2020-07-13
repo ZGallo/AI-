@@ -47,14 +47,16 @@ def get_pet_labels(image_dir):
     
     results_dic = {}
     for name in names_list:
+        #creates list
         new_name = name.lower().split('_')
         new_string = " " 
+        #iterate through the list and check if variable is non-numeric
         for var in new_name:
             if var.isalpha():
                 new_string += var + " "
         
         if name not in results_dic:
-           results_dic[name] = [new_string]
+           results_dic[name] = [new_string.strip()]
     
     #print(len(results_dic))
     return results_dic
